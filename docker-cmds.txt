@@ -1,0 +1,3 @@
+docker run --name java-app-backend -d -p 8080:8080 java-app-tomcat-backend
+
+docker run --name java-app-nginx -d -p 80:80 --link java-app-backend java-app-nginx-frontend
